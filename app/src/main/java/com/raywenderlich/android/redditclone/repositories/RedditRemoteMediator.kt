@@ -44,13 +44,13 @@ import com.raywenderlich.android.redditclone.networking.RedditService
 
 @OptIn(ExperimentalPagingApi::class)
 class RedditRemoteMediator(
-    private val redditService: RedditService,
-    private val redditDatabase: RedditDatabase
+  private val redditService: RedditService,
+  private val redditDatabase: RedditDatabase
 ) : RemoteMediator<Int, RedditPost>() {
-    override suspend fun load(
-        loadType: LoadType,
-        state: PagingState<Int, RedditPost>
-    ): MediatorResult {
-        TODO("not implemented")
-    }
+  override suspend fun load(
+    loadType: LoadType,
+    state: PagingState<Int, RedditPost>
+  ): MediatorResult {
+    TODO("not implemented")
+  }
 }

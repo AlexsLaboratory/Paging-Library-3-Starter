@@ -43,23 +43,23 @@ import androidx.recyclerview.widget.RecyclerView
 import com.raywenderlich.android.redditclone.R
 
 class RedditLoadingAdapter(private val retry: () -> Unit) :
-    LoadStateAdapter<RedditLoadingAdapter.LoadingStateViewHolder>() {
+  LoadStateAdapter<RedditLoadingAdapter.LoadingStateViewHolder>() {
 
-    class LoadingStateViewHolder(itemView: View, retry: () -> Unit) :
-        RecyclerView.ViewHolder(itemView) {
-        //TODO: not implemented
-    }
+  class LoadingStateViewHolder(itemView: View, retry: () -> Unit) :
+    RecyclerView.ViewHolder(itemView) {
+    //TODO: not implemented
+  }
 
-    override fun onBindViewHolder(holder: LoadingStateViewHolder, loadState: LoadState) {
-        TODO("not implemented")
-    }
+  override fun onBindViewHolder(holder: LoadingStateViewHolder, loadState: LoadState) {
+    TODO("not implemented")
+  }
 
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        loadState: LoadState
-    ): LoadingStateViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_loading_state, parent, false)
-        return LoadingStateViewHolder(view, retry)
-    }
+  override fun onCreateViewHolder(
+    parent: ViewGroup,
+    loadState: LoadState
+  ): LoadingStateViewHolder {
+    val view = LayoutInflater.from(parent.context)
+      .inflate(R.layout.item_loading_state, parent, false)
+    return LoadingStateViewHolder(view, retry)
+  }
 }
